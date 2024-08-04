@@ -67,7 +67,7 @@ image_folder/
 
    ```sh
    git clone https://github.com/brew-guy/nanodegree-ai
-   cd aipnd-project
+   cd nanodegree-ai
    ```
 
 2. Install the required packages:

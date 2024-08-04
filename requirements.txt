@@ -1,0 +1,15 @@
+# Pytorch basic env
+numpy
+pandas
+matplotlib
+jupyter
+
+# Simple local RAG project
+tqdm
+PyMuPDF
+Requests
+sentence_transformers
+spacy
+transformers
+accelerate
+bitsandbytes
