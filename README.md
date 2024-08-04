@@ -54,13 +54,6 @@ image_folder/
         ...
 ```
 
-### Prerequisites
-
-- Python 3.x
-- PyTorch
-- torchvision
-- tqdm
-
 ### Installation
 
 1. Clone the repository:
@@ -70,14 +63,29 @@ image_folder/
    cd nanodegree-ai
    ```
 
-2. Install the required packages:
-   ```sh
-   pip install -r requirements.txt
-   ```
+### Setting Up the Development Environment
 
-### Training the Model
+To ensure a consistent development environment, the project is set up using a development container (`devcontainer`) with a `Dockerfile` and `requirements.txt` file. Useful for collaborative projects and maintaining a stable development environment across different machines.
 
-To train the model, run the `train.py` script with the appropriate arguments. For example:
+#### Prerequisites
+
+- Docker
+- Visual Studio Code
+- Dev Containers extension for Visual Studio Code
+
+### Using the Development Container in VS Code
+
+1. Open the project in VSCode.
+2. Click the `Open a Remote Window` icon in the lower left corner
+3. Select `(Re)Open in Container`
+4. Alternatively Press Ctrl+P to open the Command Palette
+5. Select `Dev Containers: (Re)Build and (Re)Open in Container`
+
+VS Code will build the Docker image defined in the Dockerfile, create a container, and open your project inside this container. The devcontainer or Dockerfile instructions will ensure that all the dependencies listed in `requirements.txt` are installed.
+
+### Training a Model
+
+To train a model by transfer learning, run the `train.py` script with the appropriate arguments. For example:
 
 ```sh
 python train.py flower_data --arch "vgg16" --learning_rate 0.001 --hidden_units 512 --epochs 10 --gpu
